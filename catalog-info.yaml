@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: e2e-11020402
+  description: End-to-end test service (safe to delete)
+  annotations:
+    github.com/project-slug: sfy247/e2e-11020402
+    backstage.io/techdocs-ref: dir:.
+    # Kubernetes tab: the platform's web-service chart labels workloads by name
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/name=e2e-11020402
+  tags: [dotnet, csharp]
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/platform-team
+  # The platform group the service was created in (a System in Discover)
+  system: services

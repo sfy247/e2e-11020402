@@ -10,3 +10,4 @@ create table items (
     name       text        not null,
     created_at timestamptz not null default now()
 );
+alter table items add column note text; -- edited after it was applied (safety test)
